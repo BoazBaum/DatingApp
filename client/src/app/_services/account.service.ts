@@ -8,7 +8,7 @@ import { User } from '../_models/user';
   providedIn: 'root'
 })
 export class AccountService {
-  baseUrl = 'http://localhost:44399/api/';
+  baseUrl = 'http://localhost:5002/api/';
 private currentUserSource = new BehaviorSubject<User | null>(null);
 currentUser$ = this.currentUserSource.asObservable();
 
