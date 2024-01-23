@@ -14,7 +14,7 @@ import { MembersService } from 'src/app/_services/members.service';
   selector: 'app-member-edit',
   standalone: true,
   templateUrl: './member-edit.component.html',
-  styleUrl: './member-edit.component.css',
+  styleUrls: ['./member-edit.component.css'],
   imports: [CommonModule, TabsModule, GalleryModule, FormsModule]
 })
 export class MemberEditComponent {
