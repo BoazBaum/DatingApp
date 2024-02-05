@@ -10,12 +10,11 @@ import { User } from 'src/app/_models/user';
 import { AccountService } from 'src/app/_services/account.service';
 import { MembersService } from 'src/app/_services/members.service';
 
+
 @Component({
   selector: 'app-member-edit',
-  standalone: true,
   templateUrl: './member-edit.component.html',
-  styleUrls: ['./member-edit.component.css'],
-  imports: [CommonModule, TabsModule, GalleryModule, FormsModule]
+  styleUrls: ['./member-edit.component.css']
 })
 export class MemberEditComponent {
   @ViewChild('editForm') editForm: NgForm | undefined;
