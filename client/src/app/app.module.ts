@@ -28,6 +28,8 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 import { RouteReuseStrategy } from '@angular/router';
 import { CustomRouteReuseStrategy } from './_services/customRoutReuseStrategy';
+import { AboutComponent } from './about/about.component';
+import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
 
 
 
@@ -49,6 +51,8 @@ import { CustomRouteReuseStrategy } from './_services/customRoutReuseStrategy';
     MemberEditComponent,
     TextInputComponent,
     DatePickerComponent,
+    AboutComponent,
+    ConfirmDialogComponent,
     // MemberMessagesComponent
   ],
   imports: [
