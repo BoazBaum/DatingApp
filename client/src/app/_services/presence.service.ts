@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 import { ToastrService } from 'ngx-toastr';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 import { BehaviorSubject, take } from 'rxjs';
 

@@ -1,19 +1,13 @@
-# fly.toml app configuration file generated for datingapp4u on 2024-04-26T14:00:34+03:00
+# fly.toml app configuration file generated for datingappforu on 2024-04-28T17:18:15+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'datingapp4u'
-primary_region = 'mia'
+app = 'datingappforu'
+primary_region = 'ams'
 
 [build]
   image = 'boaz100/datingapp:latest'
-
-[env]
-  ASPNETCORE_URLS='http://+:8080'
-  CloudinarySettings__CloudName="dyfsley9m"
-  CloudinarySettings__ApiKey="442446724435967"
-
 
 [http_service]
   internal_port = 8080
