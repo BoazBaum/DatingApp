@@ -30,6 +30,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { CustomRouteReuseStrategy } from './_services/customRoutReuseStrategy';
 import { AboutComponent } from './about/about.component';
 import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
+import { environment } from 'src/environments/environment';
 
 
 
