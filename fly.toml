@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for dating4u on 2024-05-14T10:08:24+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'dating4u'
+primary_region = 'cdg'
+
+[build]
+  image = 'boaz100/datingapp:latest'
+
+[env]
+  ASPNETCORE_URLS = 'http://+:8080'
+  CloudinarySettings__ApiKey = '442446724435967'
+  CloudinarySettings__CloudName = 'dyfsley9m'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
